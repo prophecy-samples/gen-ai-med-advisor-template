@@ -13,12 +13,11 @@ def pipeline(spark: SparkSession) -> None:
     df_valid_files_only = valid_files_only(spark, df_pubmed_bronze_baseline_xml)
     df_with_baseline = with_baseline(spark, df_valid_files_only)
     df_parallelize = parallelize(spark, df_with_baseline)
-    df_Reformat_1 = Reformat_1(spark, df_parallelize)
-    Script_1(spark, df_Reformat_1)
     df_pubmed_bronze_baseline_content = pubmed_bronze_baseline_content(spark)
     df_pubmed_bronze_articles = pubmed_bronze_articles(spark)
     df_content_only = content_only(spark, df_pubmed_bronze_baseline_content)
     pubmed_bronze_baseline_text(spark, df_content_only)
+    df_Reformat_1 = Reformat_1(spark, df_parallelize)
     pubmed_bronze_articles_tbl(spark, df_pubmed_bronze_articles)
 
 def main():

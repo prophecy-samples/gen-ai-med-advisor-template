@@ -1,1 +1,1 @@
-{"initCode":"","code":"@udf(returnType = BinaryType())\ndef download(url: str): \n    import requests\n\n    return requests.get(url).content"}
+{"initCode":"","code":"@udf(returnType = IntegerType())\ndef download(url: str, file_name: str): \n    import requests\n\n    c = requests.get(url).content\n\n    with open(f\"/dbfs/prophecy-samples/med-advisor/pubmed-mini/{file_name}\", \"wb\") as _out:\n        _out.write(c)\n\n    return len(c)"}

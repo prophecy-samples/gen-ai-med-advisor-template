@@ -8,4 +8,4 @@ from pubmed_ingest.config.ConfigStore import *
 from pubmed_ingest.udfs.UDFs import *
 
 def Reformat_1(spark: SparkSession, parallelize: DataFrame) -> DataFrame:
-    return parallelize.select(download(col("url")).alias("content"), col("file_name"))
+    return parallelize.select(download(col("url"), col("file_name")).alias("content"), col("file_name"))

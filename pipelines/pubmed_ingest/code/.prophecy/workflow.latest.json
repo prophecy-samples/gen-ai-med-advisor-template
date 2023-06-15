@@ -78,12 +78,6 @@
     "target" : "McyatnlpljS7XJsjH5uim$$Ms6mTJIGM1lXrcw1Jgla-",
     "targetPort" : "XUmApqv5tLaGFkkr6tnO8$$zqnv7WIX9aM0WobAhpNNe"
   }, {
-    "id" : "Z2iNDX-JQ5qdqcalV27rm$$BXU9iv4P5ZD0v7fNtd18U",
-    "source" : "McyatnlpljS7XJsjH5uim$$Ms6mTJIGM1lXrcw1Jgla-",
-    "sourcePort" : "ZI9zT2fm5baWXmO879mdI$$HWgMBd56RFWtQsHqx3EB8",
-    "target" : "47WYtCEIzTwb-DO4pii_J$$lLBuyQGodOn71Ohmfddej",
-    "targetPort" : "gbrycozpVx_Lw0hQ_7Kun$$aU-MvR2K8I-Kyap7blang"
-  }, {
     "id" : "eoj_7hfcDT5MLbwEuaLFg",
     "source" : "IakRfhM_0GcZXqQZB1Zoa$$6aOWK0EjcmCUwOA-RMn_J",
     "sourcePort" : "NTSTfrHLot-XwKdYltj58$$PN2S_G-1QBqeaKbFqGpej",
@@ -97,57 +91,6 @@
     "targetPort" : "qdSXJZ3eNHlgiaDXDPIww$$kxSonbvnDxGD-yM5KFdxE"
   } ],
   "processes" : {
-    "47WYtCEIzTwb-DO4pii_J$$lLBuyQGodOn71Ohmfddej" : {
-      "id" : "47WYtCEIzTwb-DO4pii_J$$lLBuyQGodOn71Ohmfddej",
-      "component" : "Script",
-      "metadata" : {
-        "label" : "Script_1",
-        "slug" : "Script_1",
-        "x" : 700,
-        "y" : 100,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "gbrycozpVx_Lw0hQ_7Kun$$aU-MvR2K8I-Kyap7blang",
-          "slug" : "in0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "content",
-              "type" : "binary",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "file_name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            } ]
-          },
-          "isStreaming" : false
-        } ],
-        "outputs" : [ ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : true
-      },
-      "properties" : {
-        "script" : "def save(file_name, content):\n    with open(f\"/dbfs/prophecy-samples/med-advisor/pubmed/{file_name}\", \"wb\") as _out:\n        _out.write(content)\n\n    return len(content)\n\nimport os\nos.makedirs(\"/dbfs/prophecy-samples/med-advisor/pubmed/\", exist_ok=True)\n\nsave_udf = udf(save, IntegerType())\nin0.select(save_udf(in0.file_name, in0.content).alias('size')).agg(expr('sum(size)')).show()\n\n\n# in0.rdd.map(lambda row: (row['file_name'], row['content'])).saveAsBinaryFile('dbfs/prophecy-samples/med-advisor/pubmed-2/')",
-        "scriptMethodHeader" : "def Script(spark: SparkSession, in0: DataFrame) -> None:",
-        "scriptMethodFooter" : "    return "
-      }
-    },
     "pUxIQxS9apHvOryRU6-DA$$tz5O8NrOJOKv1z1uhusiW" : {
       "id" : "pUxIQxS9apHvOryRU6-DA$$tz5O8NrOJOKv1z1uhusiW",
       "component" : "Repartition",
@@ -558,7 +501,7 @@
           "target" : "content",
           "expression" : {
             "format" : "sql",
-            "expression" : "download(url)"
+            "expression" : "download(url, file_name)"
           },
           "description" : ""
         }, {

@@ -18,8 +18,12 @@ def registerUDFs(spark: SparkSession):
     spark.udf.register("download", download)
     ScalaUtil.initializeUDFs(spark)
 
-@udf(returnType = BinaryType())
-def download(url: str):
+@udf(returnType = IntegerType())
+def download(url: str, file_name: str):
     import requests
+    c = requests.get(url).content
 
-    return requests.get(url).content
+    with open(f"/dbfs/prophecy-samples/med-advisor/pubmed-mini/{file_name}", "wb") as _out:
+        _out.write(c)
+
+    return len(c)

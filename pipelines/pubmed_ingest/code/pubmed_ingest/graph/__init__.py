@@ -8,4 +8,3 @@ from .Reformat_1 import Reformat_1
 from .parallelize import parallelize
 from .pubmed_bronze_baseline_text import pubmed_bronze_baseline_text
 from .pubmed_bronze_baseline_content import pubmed_bronze_baseline_content
-from .Script_1 import Script_1
