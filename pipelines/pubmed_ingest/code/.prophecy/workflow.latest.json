@@ -1,0 +1,1862 @@
+{
+  "metainfo" : {
+    "id" : "1",
+    "language" : "python",
+    "fabricId" : "2",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "maciej_prophecy.genaimedadvisortemplate.functions",
+      "sharedFunctionPackageNames" : [ ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : false,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "pubmed_ingest",
+    "configurationVersion" : "v1"
+  },
+  "connections" : [ {
+    "id" : "5Dcnk1dUnlzQ5cfFJ-FEe$$66oDSB1VkqT38VkMG8wuP",
+    "source" : "aIRT0X8DgkfXFnII11nHw$$1fHkWSWMVFa9UxkdCzE0m",
+    "sourcePort" : "ExZmcAKeWU69XcwQX0I9S$$poVytUGFJiQFpLQRnKpj2",
+    "target" : "QPvGt0_0lTK1aVgTpUUDR$$Eu6zn7TvkdiTU3uj4v2Vu",
+    "targetPort" : "zi3CE_kIIp18jV-0xSEaG$$2ToNH8J5331TldSRzJzfR"
+  }, {
+    "id" : "GkU_GaM8EnD9bYvVctSqx$$OI_YlHbJyws5n_XbU_SJK",
+    "source" : "QPvGt0_0lTK1aVgTpUUDR$$Eu6zn7TvkdiTU3uj4v2Vu",
+    "sourcePort" : "1PtLUeanJXlQeKWC_2G3p$$SNcGvmMEwWMUgyhXPUCfr",
+    "target" : "K7x8xyDNqaaxPlDnR_MHe$$Vy3zFVOWi2oi-lqe04fp4",
+    "targetPort" : "yjXLMykW9YAshrHi8qdbQ$$Wbm00T2Yz3j6Xu8GVsigQ"
+  }, {
+    "id" : "52nnn5eCbm0o1jIm7KSNw$$S-NNNDYyUOwzFXOsHk-1I",
+    "source" : "q0difxeAPpMo2gVwTUdqt$$wZHh1jI6544Ox-qKomRSG",
+    "sourcePort" : "Z6klFNT3Cqx_NUWAvsNeX$$CIA3S_3vWm3k0-BLoihnM",
+    "target" : "IakRfhM_0GcZXqQZB1Zoa$$6aOWK0EjcmCUwOA-RMn_J",
+    "targetPort" : "nr3n705hOmGNT6GMz5Bk8$$XCIfk1H1H1LHAZmjxJetg"
+  }, {
+    "id" : "Gg-TnAX4GadzyLJ3cWs5I$$rmZocSs-ksNOFxfoyQnRZ",
+    "source" : "E5VZM4yQcR6-84sQpaKeW$$V3ax3XjiKNBABTntnxYTF",
+    "sourcePort" : "UpCb1AdDKYmj9tZvQz5O_$$SQkE5S5gEiO8WvtjDmvo0",
+    "target" : "pUxIQxS9apHvOryRU6-DA$$tz5O8NrOJOKv1z1uhusiW",
+    "targetPort" : "aZYak7u4g1ty9HKsIETsv$$YpKC2r6cV45zWqQAdWm0P"
+  }, {
+    "id" : "EPctakb9jb9yg8vM1IJMo$$xsIRsX9tkWoxHCMHnqHbA",
+    "source" : "pUxIQxS9apHvOryRU6-DA$$tz5O8NrOJOKv1z1uhusiW",
+    "sourcePort" : "KQLl1HIIGHGC1VXpddXqz$$8a_9ESonaDGGOe1jEkGVz",
+    "target" : "McyatnlpljS7XJsjH5uim$$Ms6mTJIGM1lXrcw1Jgla-",
+    "targetPort" : "XUmApqv5tLaGFkkr6tnO8$$zqnv7WIX9aM0WobAhpNNe"
+  }, {
+    "id" : "Z2iNDX-JQ5qdqcalV27rm$$BXU9iv4P5ZD0v7fNtd18U",
+    "source" : "McyatnlpljS7XJsjH5uim$$Ms6mTJIGM1lXrcw1Jgla-",
+    "sourcePort" : "ZI9zT2fm5baWXmO879mdI$$HWgMBd56RFWtQsHqx3EB8",
+    "target" : "47WYtCEIzTwb-DO4pii_J$$lLBuyQGodOn71Ohmfddej",
+    "targetPort" : "gbrycozpVx_Lw0hQ_7Kun$$aU-MvR2K8I-Kyap7blang"
+  }, {
+    "id" : "eoj_7hfcDT5MLbwEuaLFg",
+    "source" : "IakRfhM_0GcZXqQZB1Zoa$$6aOWK0EjcmCUwOA-RMn_J",
+    "sourcePort" : "NTSTfrHLot-XwKdYltj58$$PN2S_G-1QBqeaKbFqGpej",
+    "target" : "E5VZM4yQcR6-84sQpaKeW$$V3ax3XjiKNBABTntnxYTF",
+    "targetPort" : "-4KNT9rLWkTXqGyG-v1Q2$$_UMzL3bSEpxJV0anSE5dW"
+  }, {
+    "id" : "pB0Te0uNW5SjzaXUJqMZA",
+    "source" : "WeQfNK1FD893pzqrbxZN2$$FRQ-nrLg7UQBSVh_cW9HS",
+    "sourcePort" : "GyNNdD7sTmZdO8N2KrIHv$$V3EZQhb5GdVGh-hs8IQMt",
+    "target" : "xQxt8KUmGDWUXycglrS4e$$_CFL-qpFcQ4BWqymnV3J2",
+    "targetPort" : "qdSXJZ3eNHlgiaDXDPIww$$kxSonbvnDxGD-yM5KFdxE"
+  } ],
+  "processes" : {
+    "47WYtCEIzTwb-DO4pii_J$$lLBuyQGodOn71Ohmfddej" : {
+      "id" : "47WYtCEIzTwb-DO4pii_J$$lLBuyQGodOn71Ohmfddej",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_1",
+        "slug" : "Script_1",
+        "x" : 700,
+        "y" : 100,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "gbrycozpVx_Lw0hQ_7Kun$$aU-MvR2K8I-Kyap7blang",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "content",
+              "type" : "binary",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "file_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true
+      },
+      "properties" : {
+        "script" : "def save(file_name, content):\n    with open(f\"/dbfs/prophecy-samples/med-advisor/pubmed/{file_name}\", \"wb\") as _out:\n        _out.write(content)\n\n    return len(content)\n\nimport os\nos.makedirs(\"/dbfs/prophecy-samples/med-advisor/pubmed/\", exist_ok=True)\n\nsave_udf = udf(save, IntegerType())\nin0.select(save_udf(in0.file_name, in0.content).alias('size')).agg(expr('sum(size)')).show()\n\n\n# in0.rdd.map(lambda row: (row['file_name'], row['content'])).saveAsBinaryFile('dbfs/prophecy-samples/med-advisor/pubmed-2/')",
+        "scriptMethodHeader" : "def Script(spark: SparkSession, in0: DataFrame) -> None:",
+        "scriptMethodFooter" : "    return "
+      }
+    },
+    "pUxIQxS9apHvOryRU6-DA$$tz5O8NrOJOKv1z1uhusiW" : {
+      "id" : "pUxIQxS9apHvOryRU6-DA$$tz5O8NrOJOKv1z1uhusiW",
+      "component" : "Repartition",
+      "metadata" : {
+        "label" : "parallelize",
+        "slug" : "parallelize",
+        "x" : 340,
+        "y" : 100,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "aZYak7u4g1ty9HKsIETsv$$YpKC2r6cV45zWqQAdWm0P",
+          "slug" : "Reformat_1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "url",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "file_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "KQLl1HIIGHGC1VXpddXqz$$8a_9ESonaDGGOe1jEkGVz",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "overwriteDefaultNPartitions" : false,
+        "hashExpressions" : [ ],
+        "columnsSelector" : [ ],
+        "repartitionType" : "random_repartitioning",
+        "rangeExpressions" : [ ],
+        "defaultPartitions" : null,
+        "nPartitions" : "1166"
+      }
+    },
+    "q0difxeAPpMo2gVwTUdqt$$wZHh1jI6544Ox-qKomRSG" : {
+      "id" : "q0difxeAPpMo2gVwTUdqt$$wZHh1jI6544Ox-qKomRSG",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "pubmed_bronze_baseline_xml",
+        "slug" : "pubmed_bronze_baseline_xml",
+        "x" : -220,
+        "y" : 100,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "Z6klFNT3Cqx_NUWAvsNeX$$CIA3S_3vWm3k0-BLoihnM",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/pubmed_bronze_baseline_xml"
+      }
+    },
+    "aIRT0X8DgkfXFnII11nHw$$1fHkWSWMVFa9UxkdCzE0m" : {
+      "id" : "aIRT0X8DgkfXFnII11nHw$$1fHkWSWMVFa9UxkdCzE0m",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "pubmed_bronze_baseline_content",
+        "slug" : "pubmed_bronze_baseline_content",
+        "x" : -220,
+        "y" : -100,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "ExZmcAKeWU69XcwQX0I9S$$poVytUGFJiQFpLQRnKpj2",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/pubmed_bronze_baseline_content"
+      }
+    },
+    "WeQfNK1FD893pzqrbxZN2$$FRQ-nrLg7UQBSVh_cW9HS" : {
+      "id" : "WeQfNK1FD893pzqrbxZN2$$FRQ-nrLg7UQBSVh_cW9HS",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "pubmed_bronze_articles",
+        "slug" : "pubmed_bronze_articles",
+        "x" : -220,
+        "y" : 280,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "GyNNdD7sTmZdO8N2KrIHv$$V3EZQhb5GdVGh-hs8IQMt",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/pubmed_bronze_articles"
+      }
+    },
+    "IakRfhM_0GcZXqQZB1Zoa$$6aOWK0EjcmCUwOA-RMn_J" : {
+      "id" : "IakRfhM_0GcZXqQZB1Zoa$$6aOWK0EjcmCUwOA-RMn_J",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "valid_files_only",
+        "slug" : "valid_files_only",
+        "x" : -20,
+        "y" : 100,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "nr3n705hOmGNT6GMz5Bk8$$XCIfk1H1H1LHAZmjxJetg",
+          "slug" : "pubmed_bronze_baseline_xml",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "_href",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "NTSTfrHLot-XwKdYltj58$$PN2S_G-1QBqeaKbFqGpej",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ "nr3n705hOmGNT6GMz5Bk8$$XCIfk1H1H1LHAZmjxJetg##_href" ],
+        "condition" : {
+          "format" : "sql",
+          "expression" : "regexp_extract(_href, '(\\.xml\\.gz$)', 1) = '.xml.gz'"
+        }
+      }
+    },
+    "K7x8xyDNqaaxPlDnR_MHe$$Vy3zFVOWi2oi-lqe04fp4" : {
+      "id" : "K7x8xyDNqaaxPlDnR_MHe$$Vy3zFVOWi2oi-lqe04fp4",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "pubmed_bronze_baseline_text",
+        "slug" : "pubmed_bronze_baseline_text",
+        "x" : 180,
+        "y" : -100,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "yjXLMykW9YAshrHi8qdbQ$$Wbm00T2Yz3j6Xu8GVsigQ",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "text",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/pubmed_bronze_baseline_text"
+      }
+    },
+    "E5VZM4yQcR6-84sQpaKeW$$V3ax3XjiKNBABTntnxYTF" : {
+      "id" : "E5VZM4yQcR6-84sQpaKeW$$V3ax3XjiKNBABTntnxYTF",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "with_baseline",
+        "slug" : "with_baseline",
+        "x" : 180,
+        "y" : 100,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "-4KNT9rLWkTXqGyG-v1Q2$$_UMzL3bSEpxJV0anSE5dW",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "_href",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "UpCb1AdDKYmj9tZvQz5O_$$SQkE5S5gEiO8WvtjDmvo0",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "url",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "concat('https://ftp.ncbi.nlm.nih.gov/pubmed/baseline/', _href)"
+          },
+          "description" : ""
+        }, {
+          "target" : "file_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "_href"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "-4KNT9rLWkTXqGyG-v1Q2$$_UMzL3bSEpxJV0anSE5dW##_href" ]
+      }
+    },
+    "QPvGt0_0lTK1aVgTpUUDR$$Eu6zn7TvkdiTU3uj4v2Vu" : {
+      "id" : "QPvGt0_0lTK1aVgTpUUDR$$Eu6zn7TvkdiTU3uj4v2Vu",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "content_only",
+        "slug" : "content_only",
+        "x" : -20,
+        "y" : -100,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "zi3CE_kIIp18jV-0xSEaG$$2ToNH8J5331TldSRzJzfR",
+          "slug" : "pubmed_bronze_baseline_content",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "url",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "content",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "1PtLUeanJXlQeKWC_2G3p$$SNcGvmMEwWMUgyhXPUCfr",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "text",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "content"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "zi3CE_kIIp18jV-0xSEaG$$2ToNH8J5331TldSRzJzfR##content" ]
+      }
+    },
+    "McyatnlpljS7XJsjH5uim$$Ms6mTJIGM1lXrcw1Jgla-" : {
+      "id" : "McyatnlpljS7XJsjH5uim$$Ms6mTJIGM1lXrcw1Jgla-",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : 520,
+        "y" : 100,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "XUmApqv5tLaGFkkr6tnO8$$zqnv7WIX9aM0WobAhpNNe",
+          "slug" : "parallelize",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "url",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "file_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "ZI9zT2fm5baWXmO879mdI$$HWgMBd56RFWtQsHqx3EB8",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "content",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "download(url)"
+          },
+          "description" : ""
+        }, {
+          "target" : "file_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "file_name"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "XUmApqv5tLaGFkkr6tnO8$$zqnv7WIX9aM0WobAhpNNe##file_name", "XUmApqv5tLaGFkkr6tnO8$$zqnv7WIX9aM0WobAhpNNe##url" ]
+      }
+    },
+    "xQxt8KUmGDWUXycglrS4e$$_CFL-qpFcQ4BWqymnV3J2" : {
+      "id" : "xQxt8KUmGDWUXycglrS4e$$_CFL-qpFcQ4BWqymnV3J2",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "pubmed_bronze_articles_tbl",
+        "slug" : "pubmed_bronze_articles_tbl",
+        "x" : -20,
+        "y" : 280,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "qdSXJZ3eNHlgiaDXDPIww$$kxSonbvnDxGD-yM5KFdxE",
+          "slug" : "pubmed_bronze_articles",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Article",
+              "type" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "Abstract",
+                  "type" : {
+                    "type" : "struct",
+                    "fields" : [ {
+                      "name" : "AbstractText",
+                      "type" : {
+                        "type" : "array",
+                        "elementType" : {
+                          "type" : "struct",
+                          "fields" : [ {
+                            "name" : "_Label",
+                            "type" : "string",
+                            "nullable" : true,
+                            "metadata" : {
+                              "description" : "",
+                              "mappings" : [ ],
+                              "tags" : [ ]
+                            }
+                          }, {
+                            "name" : "_NlmCategory",
+                            "type" : "string",
+                            "nullable" : true,
+                            "metadata" : {
+                              "description" : "",
+                              "mappings" : [ ],
+                              "tags" : [ ]
+                            }
+                          }, {
+                            "name" : "_VALUE",
+                            "type" : "string",
+                            "nullable" : true,
+                            "metadata" : {
+                              "description" : "",
+                              "mappings" : [ ],
+                              "tags" : [ ]
+                            }
+                          } ]
+                        },
+                        "containsNull" : true
+                      },
+                      "nullable" : true,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    } ]
+                  },
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "ArticleTitle",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "AuthorList",
+                  "type" : {
+                    "type" : "struct",
+                    "fields" : [ {
+                      "name" : "Author",
+                      "type" : {
+                        "type" : "array",
+                        "elementType" : {
+                          "type" : "struct",
+                          "fields" : [ {
+                            "name" : "AffiliationInfo",
+                            "type" : {
+                              "type" : "struct",
+                              "fields" : [ {
+                                "name" : "Affiliation",
+                                "type" : "string",
+                                "nullable" : true,
+                                "metadata" : {
+                                  "description" : "",
+                                  "mappings" : [ ],
+                                  "tags" : [ ]
+                                }
+                              } ]
+                            },
+                            "nullable" : true,
+                            "metadata" : {
+                              "description" : "",
+                              "mappings" : [ ],
+                              "tags" : [ ]
+                            }
+                          }, {
+                            "name" : "CollectiveName",
+                            "type" : "string",
+                            "nullable" : true,
+                            "metadata" : {
+                              "description" : "",
+                              "mappings" : [ ],
+                              "tags" : [ ]
+                            }
+                          }, {
+                            "name" : "ForeName",
+                            "type" : "string",
+                            "nullable" : true,
+                            "metadata" : {
+                              "description" : "",
+                              "mappings" : [ ],
+                              "tags" : [ ]
+                            }
+                          }, {
+                            "name" : "Initials",
+                            "type" : "string",
+                            "nullable" : true,
+                            "metadata" : {
+                              "description" : "",
+                              "mappings" : [ ],
+                              "tags" : [ ]
+                            }
+                          }, {
+                            "name" : "LastName",
+                            "type" : "string",
+                            "nullable" : true,
+                            "metadata" : {
+                              "description" : "",
+                              "mappings" : [ ],
+                              "tags" : [ ]
+                            }
+                          }, {
+                            "name" : "Suffix",
+                            "type" : "string",
+                            "nullable" : true,
+                            "metadata" : {
+                              "description" : "",
+                              "mappings" : [ ],
+                              "tags" : [ ]
+                            }
+                          }, {
+                            "name" : "_ValidYN",
+                            "type" : "string",
+                            "nullable" : true,
+                            "metadata" : {
+                              "description" : "",
+                              "mappings" : [ ],
+                              "tags" : [ ]
+                            }
+                          } ]
+                        },
+                        "containsNull" : true
+                      },
+                      "nullable" : true,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    }, {
+                      "name" : "_CompleteYN",
+                      "type" : "string",
+                      "nullable" : true,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    } ]
+                  },
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "ELocationID",
+                  "type" : {
+                    "type" : "struct",
+                    "fields" : [ {
+                      "name" : "_EIdType",
+                      "type" : "string",
+                      "nullable" : true,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    }, {
+                      "name" : "_VALUE",
+                      "type" : "string",
+                      "nullable" : true,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    }, {
+                      "name" : "_ValidYN",
+                      "type" : "string",
+                      "nullable" : true,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    } ]
+                  },
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "GrantList",
+                  "type" : {
+                    "type" : "struct",
+                    "fields" : [ {
+                      "name" : "Grant",
+                      "type" : {
+                        "type" : "array",
+                        "elementType" : {
+                          "type" : "struct",
+                          "fields" : [ {
+                            "name" : "Acronym",
+                            "type" : "string",
+                            "nullable" : true,
+                            "metadata" : {
+                              "description" : "",
+                              "mappings" : [ ],
+                              "tags" : [ ]
+                            }
+                          }, {
+                            "name" : "Agency",
+                            "type" : "string",
+                            "nullable" : true,
+                            "metadata" : {
+                              "description" : "",
+                              "mappings" : [ ],
+                              "tags" : [ ]
+                            }
+                          }, {
+                            "name" : "Country",
+                            "type" : "string",
+                            "nullable" : true,
+                            "metadata" : {
+                              "description" : "",
+                              "mappings" : [ ],
+                              "tags" : [ ]
+                            }
+                          }, {
+                            "name" : "GrantID",
+                            "type" : "string",
+                            "nullable" : true,
+                            "metadata" : {
+                              "description" : "",
+                              "mappings" : [ ],
+                              "tags" : [ ]
+                            }
+                          } ]
+                        },
+                        "containsNull" : true
+                      },
+                      "nullable" : true,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    }, {
+                      "name" : "_CompleteYN",
+                      "type" : "string",
+                      "nullable" : true,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    } ]
+                  },
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Journal",
+                  "type" : {
+                    "type" : "struct",
+                    "fields" : [ {
+                      "name" : "ISOAbbreviation",
+                      "type" : "string",
+                      "nullable" : true,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    }, {
+                      "name" : "ISSN",
+                      "type" : {
+                        "type" : "struct",
+                        "fields" : [ {
+                          "name" : "_IssnType",
+                          "type" : "string",
+                          "nullable" : true,
+                          "metadata" : {
+                            "description" : "",
+                            "mappings" : [ ],
+                            "tags" : [ ]
+                          }
+                        }, {
+                          "name" : "_VALUE",
+                          "type" : "string",
+                          "nullable" : true,
+                          "metadata" : {
+                            "description" : "",
+                            "mappings" : [ ],
+                            "tags" : [ ]
+                          }
+                        } ]
+                      },
+                      "nullable" : true,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    }, {
+                      "name" : "JournalIssue",
+                      "type" : {
+                        "type" : "struct",
+                        "fields" : [ {
+                          "name" : "Issue",
+                          "type" : "string",
+                          "nullable" : true,
+                          "metadata" : {
+                            "description" : "",
+                            "mappings" : [ ],
+                            "tags" : [ ]
+                          }
+                        }, {
+                          "name" : "PubDate",
+                          "type" : {
+                            "type" : "struct",
+                            "fields" : [ {
+                              "name" : "Day",
+                              "type" : "long",
+                              "nullable" : true,
+                              "metadata" : {
+                                "description" : "",
+                                "mappings" : [ ],
+                                "tags" : [ ]
+                              }
+                            }, {
+                              "name" : "MedlineDate",
+                              "type" : "string",
+                              "nullable" : true,
+                              "metadata" : {
+                                "description" : "",
+                                "mappings" : [ ],
+                                "tags" : [ ]
+                              }
+                            }, {
+                              "name" : "Month",
+                              "type" : "string",
+                              "nullable" : true,
+                              "metadata" : {
+                                "description" : "",
+                                "mappings" : [ ],
+                                "tags" : [ ]
+                              }
+                            }, {
+                              "name" : "Season",
+                              "type" : "string",
+                              "nullable" : true,
+                              "metadata" : {
+                                "description" : "",
+                                "mappings" : [ ],
+                                "tags" : [ ]
+                              }
+                            }, {
+                              "name" : "Year",
+                              "type" : "long",
+                              "nullable" : true,
+                              "metadata" : {
+                                "description" : "",
+                                "mappings" : [ ],
+                                "tags" : [ ]
+                              }
+                            } ]
+                          },
+                          "nullable" : true,
+                          "metadata" : {
+                            "description" : "",
+                            "mappings" : [ ],
+                            "tags" : [ ]
+                          }
+                        }, {
+                          "name" : "Volume",
+                          "type" : "string",
+                          "nullable" : true,
+                          "metadata" : {
+                            "description" : "",
+                            "mappings" : [ ],
+                            "tags" : [ ]
+                          }
+                        }, {
+                          "name" : "_CitedMedium",
+                          "type" : "string",
+                          "nullable" : true,
+                          "metadata" : {
+                            "description" : "",
+                            "mappings" : [ ],
+                            "tags" : [ ]
+                          }
+                        } ]
+                      },
+                      "nullable" : true,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    }, {
+                      "name" : "Title",
+                      "type" : "string",
+                      "nullable" : true,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    } ]
+                  },
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Language",
+                  "type" : {
+                    "type" : "array",
+                    "elementType" : "string",
+                    "containsNull" : true
+                  },
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Pagination",
+                  "type" : {
+                    "type" : "struct",
+                    "fields" : [ {
+                      "name" : "MedlinePgn",
+                      "type" : "string",
+                      "nullable" : true,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    } ]
+                  },
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "PublicationTypeList",
+                  "type" : {
+                    "type" : "struct",
+                    "fields" : [ {
+                      "name" : "PublicationType",
+                      "type" : {
+                        "type" : "array",
+                        "elementType" : {
+                          "type" : "struct",
+                          "fields" : [ {
+                            "name" : "_UI",
+                            "type" : "string",
+                            "nullable" : true,
+                            "metadata" : {
+                              "description" : "",
+                              "mappings" : [ ],
+                              "tags" : [ ]
+                            }
+                          }, {
+                            "name" : "_VALUE",
+                            "type" : "string",
+                            "nullable" : true,
+                            "metadata" : {
+                              "description" : "",
+                              "mappings" : [ ],
+                              "tags" : [ ]
+                            }
+                          } ]
+                        },
+                        "containsNull" : true
+                      },
+                      "nullable" : true,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    } ]
+                  },
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "VernacularTitle",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "_PubModel",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ChemicalList",
+              "type" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "Chemical",
+                  "type" : {
+                    "type" : "array",
+                    "elementType" : {
+                      "type" : "struct",
+                      "fields" : [ {
+                        "name" : "NameOfSubstance",
+                        "type" : {
+                          "type" : "struct",
+                          "fields" : [ {
+                            "name" : "_UI",
+                            "type" : "string",
+                            "nullable" : true,
+                            "metadata" : {
+                              "description" : "",
+                              "mappings" : [ ],
+                              "tags" : [ ]
+                            }
+                          }, {
+                            "name" : "_VALUE",
+                            "type" : "string",
+                            "nullable" : true,
+                            "metadata" : {
+                              "description" : "",
+                              "mappings" : [ ],
+                              "tags" : [ ]
+                            }
+                          } ]
+                        },
+                        "nullable" : true,
+                        "metadata" : {
+                          "description" : "",
+                          "mappings" : [ ],
+                          "tags" : [ ]
+                        }
+                      }, {
+                        "name" : "RegistryNumber",
+                        "type" : "string",
+                        "nullable" : true,
+                        "metadata" : {
+                          "description" : "",
+                          "mappings" : [ ],
+                          "tags" : [ ]
+                        }
+                      } ]
+                    },
+                    "containsNull" : true
+                  },
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CitationSubset",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CommentsCorrectionsList",
+              "type" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "CommentsCorrections",
+                  "type" : {
+                    "type" : "array",
+                    "elementType" : {
+                      "type" : "struct",
+                      "fields" : [ {
+                        "name" : "Note",
+                        "type" : "string",
+                        "nullable" : true,
+                        "metadata" : {
+                          "description" : "",
+                          "mappings" : [ ],
+                          "tags" : [ ]
+                        }
+                      }, {
+                        "name" : "PMID",
+                        "type" : {
+                          "type" : "struct",
+                          "fields" : [ {
+                            "name" : "_VALUE",
+                            "type" : "long",
+                            "nullable" : true,
+                            "metadata" : {
+                              "description" : "",
+                              "mappings" : [ ],
+                              "tags" : [ ]
+                            }
+                          }, {
+                            "name" : "_Version",
+                            "type" : "long",
+                            "nullable" : true,
+                            "metadata" : {
+                              "description" : "",
+                              "mappings" : [ ],
+                              "tags" : [ ]
+                            }
+                          } ]
+                        },
+                        "nullable" : true,
+                        "metadata" : {
+                          "description" : "",
+                          "mappings" : [ ],
+                          "tags" : [ ]
+                        }
+                      }, {
+                        "name" : "RefSource",
+                        "type" : "string",
+                        "nullable" : true,
+                        "metadata" : {
+                          "description" : "",
+                          "mappings" : [ ],
+                          "tags" : [ ]
+                        }
+                      }, {
+                        "name" : "_RefType",
+                        "type" : "string",
+                        "nullable" : true,
+                        "metadata" : {
+                          "description" : "",
+                          "mappings" : [ ],
+                          "tags" : [ ]
+                        }
+                      } ]
+                    },
+                    "containsNull" : true
+                  },
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DateCompleted",
+              "type" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "Day",
+                  "type" : "long",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Month",
+                  "type" : "long",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Year",
+                  "type" : "long",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DateRevised",
+              "type" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "Day",
+                  "type" : "long",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Month",
+                  "type" : "long",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "Year",
+                  "type" : "long",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "GeneralNote",
+              "type" : {
+                "type" : "array",
+                "elementType" : {
+                  "type" : "struct",
+                  "fields" : [ {
+                    "name" : "_Owner",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "_VALUE",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  } ]
+                },
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "KeywordList",
+              "type" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "Keyword",
+                  "type" : {
+                    "type" : "array",
+                    "elementType" : {
+                      "type" : "struct",
+                      "fields" : [ {
+                        "name" : "_MajorTopicYN",
+                        "type" : "string",
+                        "nullable" : true,
+                        "metadata" : {
+                          "description" : "",
+                          "mappings" : [ ],
+                          "tags" : [ ]
+                        }
+                      }, {
+                        "name" : "_VALUE",
+                        "type" : "string",
+                        "nullable" : true,
+                        "metadata" : {
+                          "description" : "",
+                          "mappings" : [ ],
+                          "tags" : [ ]
+                        }
+                      } ]
+                    },
+                    "containsNull" : true
+                  },
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "_Owner",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "MedlineJournalInfo",
+              "type" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "Country",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "ISSNLinking",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "MedlineTA",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "NlmUniqueID",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "MeshHeadingList",
+              "type" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "MeshHeading",
+                  "type" : {
+                    "type" : "array",
+                    "elementType" : {
+                      "type" : "struct",
+                      "fields" : [ {
+                        "name" : "DescriptorName",
+                        "type" : {
+                          "type" : "struct",
+                          "fields" : [ {
+                            "name" : "_MajorTopicYN",
+                            "type" : "string",
+                            "nullable" : true,
+                            "metadata" : {
+                              "description" : "",
+                              "mappings" : [ ],
+                              "tags" : [ ]
+                            }
+                          }, {
+                            "name" : "_Type",
+                            "type" : "string",
+                            "nullable" : true,
+                            "metadata" : {
+                              "description" : "",
+                              "mappings" : [ ],
+                              "tags" : [ ]
+                            }
+                          }, {
+                            "name" : "_UI",
+                            "type" : "string",
+                            "nullable" : true,
+                            "metadata" : {
+                              "description" : "",
+                              "mappings" : [ ],
+                              "tags" : [ ]
+                            }
+                          }, {
+                            "name" : "_VALUE",
+                            "type" : "string",
+                            "nullable" : true,
+                            "metadata" : {
+                              "description" : "",
+                              "mappings" : [ ],
+                              "tags" : [ ]
+                            }
+                          } ]
+                        },
+                        "nullable" : true,
+                        "metadata" : {
+                          "description" : "",
+                          "mappings" : [ ],
+                          "tags" : [ ]
+                        }
+                      }, {
+                        "name" : "QualifierName",
+                        "type" : {
+                          "type" : "array",
+                          "elementType" : {
+                            "type" : "struct",
+                            "fields" : [ {
+                              "name" : "_MajorTopicYN",
+                              "type" : "string",
+                              "nullable" : true,
+                              "metadata" : {
+                                "description" : "",
+                                "mappings" : [ ],
+                                "tags" : [ ]
+                              }
+                            }, {
+                              "name" : "_UI",
+                              "type" : "string",
+                              "nullable" : true,
+                              "metadata" : {
+                                "description" : "",
+                                "mappings" : [ ],
+                                "tags" : [ ]
+                              }
+                            }, {
+                              "name" : "_VALUE",
+                              "type" : "string",
+                              "nullable" : true,
+                              "metadata" : {
+                                "description" : "",
+                                "mappings" : [ ],
+                                "tags" : [ ]
+                              }
+                            } ]
+                          },
+                          "containsNull" : true
+                        },
+                        "nullable" : true,
+                        "metadata" : {
+                          "description" : "",
+                          "mappings" : [ ],
+                          "tags" : [ ]
+                        }
+                      } ]
+                    },
+                    "containsNull" : true
+                  },
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "NumberOfReferences",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "OtherAbstract",
+              "type" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "AbstractText",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "_Language",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "_Type",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "OtherID",
+              "type" : {
+                "type" : "array",
+                "elementType" : {
+                  "type" : "struct",
+                  "fields" : [ {
+                    "name" : "_Source",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  }, {
+                    "name" : "_VALUE",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "mappings" : [ ],
+                      "tags" : [ ]
+                    }
+                  } ]
+                },
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "PMID",
+              "type" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "_VALUE",
+                  "type" : "long",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "_Version",
+                  "type" : "long",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "PersonalNameSubjectList",
+              "type" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "PersonalNameSubject",
+                  "type" : {
+                    "type" : "array",
+                    "elementType" : {
+                      "type" : "struct",
+                      "fields" : [ {
+                        "name" : "ForeName",
+                        "type" : "string",
+                        "nullable" : true,
+                        "metadata" : {
+                          "description" : "",
+                          "mappings" : [ ],
+                          "tags" : [ ]
+                        }
+                      }, {
+                        "name" : "Initials",
+                        "type" : "string",
+                        "nullable" : true,
+                        "metadata" : {
+                          "description" : "",
+                          "mappings" : [ ],
+                          "tags" : [ ]
+                        }
+                      }, {
+                        "name" : "LastName",
+                        "type" : "string",
+                        "nullable" : true,
+                        "metadata" : {
+                          "description" : "",
+                          "mappings" : [ ],
+                          "tags" : [ ]
+                        }
+                      } ]
+                    },
+                    "containsNull" : true
+                  },
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SpaceFlightMission",
+              "type" : {
+                "type" : "array",
+                "elementType" : "string",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_Owner",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "_Status",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/pubmed_bronze_articles_tbl"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false
+  }
+}

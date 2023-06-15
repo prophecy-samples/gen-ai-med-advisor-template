@@ -1,0 +1,1 @@
+{"initCode":"","code":"@udf(returnType = BinaryType())\ndef download(url: str): \n    import requests\n\n    return requests.get(url).content"}

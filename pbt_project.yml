@@ -1,0 +1,247 @@
+name: gen-ai-med-advisor-template
+description: ''
+version: 0.0.1
+author: maciej@prophecy.io
+language: python
+buildSystem: ''
+buildSystemDetails:
+  artefactID: genaimedadvisortemplate
+  parentArtefactID: maciej_prophecy
+  buildSystem: wheel
+  author: null
+  createdAt: '2023-06-15 02:55:50'
+  modifiedAt: '2023-06-15 02:55:50'
+pipelines:
+  pipelines/pubmed_ingest:
+    name: pubmed_ingest
+    description: ''
+    author: maciej@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2023-06-15 02:55:50'
+    modifiedAt: '2023-06-15 08:44:16'
+    datasets:
+      inputs:
+      - datasets/pubmed_bronze_articles
+      - datasets/pubmed_bronze_baseline_content
+      - datasets/pubmed_bronze_baseline_xml
+      outputs:
+      - datasets/pubmed_bronze_articles_tbl
+      - datasets/pubmed_bronze_baseline_text
+    subgraphs: []
+    dependencies: {}
+  pipelines/pubmed_vectorize:
+    name: pubmed_vectorize
+    description: ''
+    author: maciej@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2023-06-15 03:51:32'
+    modifiedAt: '2023-06-15 07:58:38'
+    datasets:
+      inputs:
+      - datasets/pubmed_bronze_articles_tbl
+      - datasets/pubmed_silver_vectorized
+      outputs:
+      - datasets/pubmed_silver_vectorized
+      - datasets/pubmed_silver_vectors_pinecone
+    subgraphs: []
+    dependencies: {}
+  pipelines/pubmed_answer:
+    name: pubmed_answer
+    description: ''
+    author: maciej@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2023-06-15 07:34:29'
+    modifiedAt: '2023-06-15 07:51:59'
+    datasets:
+      inputs:
+      - datasets/pubmed_silver_vectorized
+      - datasets/question
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+datasets:
+  datasets/pubmed_bronze_baseline_content:
+    name: pubmed_bronze_baseline_content
+    description: ''
+    author: maciej@prophecy.io
+    createdAt: '2023-06-15 03:11:57'
+    modifiedAt: '2023-06-15 03:11:57'
+    mode: batch
+    physicalDatasets:
+      dev_product:
+        fabricId: 2
+        datasetType: Warehouse
+        description: ''
+        author: maciej@prophecy.io
+        createdAt: '2023-06-15 03:11:57'
+        modifiedAt: '2023-06-15 03:11:57'
+  datasets/pubmed_bronze_baseline_text:
+    name: pubmed_bronze_baseline_text
+    description: ''
+    author: maciej@prophecy.io
+    createdAt: '2023-06-15 03:13:44'
+    modifiedAt: '2023-06-15 03:13:44'
+    mode: batch
+    physicalDatasets:
+      dev_product:
+        fabricId: 2
+        datasetType: File
+        description: ''
+        author: maciej@prophecy.io
+        createdAt: '2023-06-15 03:13:44'
+        modifiedAt: '2023-06-15 03:13:44'
+  datasets/pubmed_bronze_baseline_xml:
+    name: pubmed_bronze_baseline_xml
+    description: ''
+    author: maciej@prophecy.io
+    createdAt: '2023-06-15 03:14:18'
+    modifiedAt: '2023-06-15 03:15:12'
+    mode: batch
+    physicalDatasets:
+      dev_product:
+        fabricId: 2
+        datasetType: File
+        description: ''
+        author: maciej@prophecy.io
+        createdAt: '2023-06-15 03:14:18'
+        modifiedAt: '2023-06-15 03:14:18'
+  datasets/pubmed_bronze_articles:
+    name: pubmed_bronze_articles
+    description: ''
+    author: maciej@prophecy.io
+    createdAt: '2023-06-15 03:52:43'
+    modifiedAt: '2023-06-15 06:41:10'
+    mode: batch
+    physicalDatasets:
+      dev_product:
+        fabricId: 2
+        datasetType: File
+        description: ''
+        author: maciej@prophecy.io
+        createdAt: '2023-06-15 03:52:43'
+        modifiedAt: '2023-06-15 03:52:43'
+  datasets/pubmed_bronze_articles_raw:
+    name: pubmed_bronze_articles_raw
+    description: ''
+    author: maciej@prophecy.io
+    createdAt: '2023-06-15 03:56:54'
+    modifiedAt: '2023-06-15 03:57:06'
+    mode: batch
+    physicalDatasets:
+      dev_product:
+        fabricId: 2
+        datasetType: File
+        description: ''
+        author: maciej@prophecy.io
+        createdAt: '2023-06-15 03:56:54'
+        modifiedAt: '2023-06-15 03:56:54'
+  datasets/pubmed_bronze_articles_tbl:
+    name: pubmed_bronze_articles_tbl
+    description: ''
+    author: maciej@prophecy.io
+    createdAt: '2023-06-15 06:12:46'
+    modifiedAt: '2023-06-15 06:41:00'
+    mode: batch
+    physicalDatasets:
+      dev_product:
+        fabricId: 2
+        datasetType: Database
+        description: ''
+        author: maciej@prophecy.io
+        createdAt: '2023-06-15 06:12:46'
+        modifiedAt: '2023-06-15 06:12:46'
+  datasets/pubmed_silver_vectorized:
+    name: pubmed_silver_vectorized
+    description: ''
+    author: maciej@prophecy.io
+    createdAt: '2023-06-15 07:01:59'
+    modifiedAt: '2023-06-15 07:02:27'
+    mode: batch
+    physicalDatasets:
+      dev_product:
+        fabricId: 2
+        datasetType: Database
+        description: ''
+        author: maciej@prophecy.io
+        createdAt: '2023-06-15 07:02:00'
+        modifiedAt: '2023-06-15 07:02:00'
+  datasets/pubmed_silver_vectors_pinecone:
+    name: pubmed_silver_vectors_pinecone
+    description: ''
+    author: maciej@prophecy.io
+    createdAt: '2023-06-15 07:03:14'
+    modifiedAt: '2023-06-15 07:05:23'
+    mode: batch
+    physicalDatasets:
+      dev_product:
+        fabricId: 2
+        datasetType: Warehouse
+        description: ''
+        author: maciej@prophecy.io
+        createdAt: '2023-06-15 07:03:14'
+        modifiedAt: '2023-06-15 07:03:14'
+  datasets/question:
+    name: question
+    description: ''
+    author: maciej@prophecy.io
+    createdAt: '2023-06-15 07:35:02'
+    modifiedAt: '2023-06-15 07:51:59'
+    mode: batch
+    physicalDatasets:
+      dev_product:
+        fabricId: 2
+        datasetType: File
+        description: ''
+        author: maciej@prophecy.io
+        createdAt: '2023-06-15 07:35:02'
+        modifiedAt: '2023-06-15 07:35:02'
+  datasets/pubmed_bronze_articles_gz:
+    name: pubmed_bronze_articles_gz
+    description: ''
+    author: maciej@prophecy.io
+    createdAt: '2023-06-15 08:40:01'
+    modifiedAt: '2023-06-15 08:40:01'
+    mode: batch
+    physicalDatasets:
+      dev_product:
+        fabricId: 2
+        datasetType: File
+        description: ''
+        author: maciej@prophecy.io
+        createdAt: '2023-06-15 08:40:01'
+        modifiedAt: '2023-06-15 08:40:01'
+templates: {}
+jobs: {}
+functions:
+  author: null
+  createdAt: '2023-06-15 02:55:50'
+  modifiedAt: '2023-06-15 08:44:16'
+  gems: {}
+  udfs:
+    udfs/download:
+      name: download
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: maciej@prophecy.io
+      createdAt: '2022-12-15 18:04:50'
+      modifiedAt: '2022-12-15 18:04:50'
+  udafs: {}
+  expressions: {}
+subgraphs: {}
+sqlModels: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies: []
+projectDependencies: {}
+pipelineConfigurations: {}

@@ -1,0 +1,42 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: openai_embedding
+    type:
+      type: array
+      elementType: float
+      containsNull: true
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: openai_error
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: abstract
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: title
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: pmid
+    type: long
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []

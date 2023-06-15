@@ -1,0 +1,1 @@
+{"format":"seed","description":"","column_name":"question","schema":{"type":"struct","fields":[{"name":"question","type":"string","nullable":true,"metadata":{"description":"","mappings":[],"tags":[]}}]},"value":"What are common diseases associated with migraines?","datasetType":"File"}

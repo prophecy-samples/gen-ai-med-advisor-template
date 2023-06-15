@@ -1,0 +1,11 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: content
+    type: byte
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
